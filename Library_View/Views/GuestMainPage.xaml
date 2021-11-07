@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Library_View.GuestMainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Library_View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Search Page" FontSize="20" BorderThickness="5" BorderBrush="White" CornerRadius="10" Margin="0,255,0,0" VerticalAlignment="Top" Height="105" Width="187" Click="Button_Click" HorizontalAlignment="Center"/>
+        <Button Name="LogOut" BorderThickness="5" BorderBrush="White" CornerRadius="10"  FontSize="30" Content="Log Out" Height="121" Width="237" Click="LogOut_Click" HorizontalAlignment="Center" Margin="0,396,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

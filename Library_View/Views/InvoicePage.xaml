@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Library_View.InvoicePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Library_View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListView x:Name="Invoice_ListView" Margin="62,100,640,51" BorderThickness="5" BorderBrush="White" CornerRadius="10"/>
+        <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Margin="814,139,0,0" FontSize="50" Text="Search" TextWrapping="Wrap" VerticalAlignment="Top" Width="308"/>
+        <TextBlock HorizontalAlignment="Left" Margin="281,41,0,0" FontSize="40" Text="Invoices" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <CalendarDatePicker x:Name="Start_Date" Margin="805,480,0,0" VerticalAlignment="Top" PlaceholderText="Start Date" Width="122" DateChanged="DateChanged"/>
+        <CalendarDatePicker x:Name="End_Date" Margin="1018,480,0,0" VerticalAlignment="Top" PlaceholderText="End Date" Width="116" DateChanged="DateChanged"/>
+        <TextBox x:Name="Customer_Name_Search_Box" HorizontalAlignment="Left" Margin="805,261,0,0" BorderThickness="2" BorderBrush="White" CornerRadius="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" PlaceholderText="Search By Customer Name" TextChanged="Customer_Name_Search_Box_TextChanged"/>
+        <TextBox x:Name="Customer_ID_Search_Box" BeforeTextChanging="ID_BeforeTextChanging" HorizontalAlignment="Left" Margin="805,326,0,0" BorderThickness="2" BorderBrush="White" CornerRadius="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" PlaceholderText="Search By Customer ID" TextChanged="Customer_ID_Search_Box_TextChanged"/>
+        <TextBox x:Name="Invoice_ID_Search_Box" BeforeTextChanging="ID_BeforeTextChanging" HorizontalAlignment="Left" Margin="805,400,0,0" BorderThickness="2" BorderBrush="White" CornerRadius="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" PlaceholderText="Search By Invoice ID" TextChanged="Invoice_ID_Search_Box_Copy_TextChanged"/>
+        <Button Content="Back" Margin="924,558,0,0" Height="53" Width="91"  BorderThickness="2" BorderBrush="White" CornerRadius="20" Click="Back_Click" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

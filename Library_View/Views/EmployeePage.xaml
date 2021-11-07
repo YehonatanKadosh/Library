@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Library_View.EmployeePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Library_View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListView Name="User_ListView" Margin="150,160,641,71" BorderThickness="5" BorderBrush="White" CornerRadius="10" SelectionChanged="Employee_ListView_SelectionChanged"/>
+        <TextBox Name="Search_emplioyee_Box" HorizontalAlignment="Left" TextChanged="Search_emplioyee_Box_TextChangedAsync" Margin="151,114,0,0" PlaceholderText="Search employee" FontSize="20" BorderThickness="2" CornerRadius="5" BorderBrush="White" TextWrapping="Wrap" VerticalAlignment="Top" Width="489" Height="41"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="35" Margin="313,63,0,0" Text="Employees" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" FontSize="35" Margin="806,111,0,0" Text="Employee details" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="Employee_Name_Box" HorizontalAlignment="Left" BorderThickness="2" BorderBrush="White" CornerRadius="10" Margin="806,182,0,0" PlaceholderText="Employee Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <TextBox Name="Employee_Password_Box" HorizontalAlignment="Left" BorderThickness="2" BorderBrush="White" CornerRadius="10" Margin="806,227,0,0" PlaceholderText="Employee Password" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"/>
+        <ComboBox Name="Premission_Level_ComboBox" Margin="806,274,0,0" Width="261" BorderThickness="2" BorderBrush="White" CornerRadius="10" PlaceholderText="Premission Level"/>
+        <Button Name="Update_Button" Visibility="Collapsed" Content="Update" Margin="905,364,0,0" VerticalAlignment="Top"  BorderThickness="1" BorderBrush="White" CornerRadius="10" Click="Update_Button_Click" />
+        <Button Name="Delete_Button" Visibility="Collapsed" Content="Delete" Margin="907,400,0,0" VerticalAlignment="Top"  BorderThickness="1" BorderBrush="White" CornerRadius="10" Click="Delete_Button_Click" />
+        <Button Name="Add_New_Employee_Button" Content="Add New Employee" Margin="866,329,0,0" VerticalAlignment="Top"  BorderThickness="1" BorderBrush="White" CornerRadius="10" Click="Add_New_Employee_Button_Click" />
+        <Button x:Name="Add" Visibility="Collapsed" Content="Add" Margin="902,330,0,0" VerticalAlignment="Top"  BorderThickness="1" BorderBrush="White" CornerRadius="10" Click="Add_Click" Width="70" />
+        <Button Content="Back" Margin="891,539,0,0" Height="53" Width="91"  BorderThickness="2" BorderBrush="White" CornerRadius="20" Click="Back_Click" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

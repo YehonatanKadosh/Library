@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Library_View.ManagerMainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Library_View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Search Page" FontSize="20" BorderThickness="5" BorderBrush="White" CornerRadius="10" Margin="145,300,0,0" VerticalAlignment="Top" Height="105" Width="187" Click="Button_Click"/>
+        <Button Content="Invoices" BorderThickness="5" FontSize="20" BorderBrush="White" CornerRadius="10" Margin="796,446,0,0" VerticalAlignment="Top" Height="104" Width="187" Click="Button_Click_1"/>
+        <Button Content="Genres" BorderThickness="5" FontSize="20" BorderBrush="White" CornerRadius="10" Margin="0,114,0,0" VerticalAlignment="Top" Height="105" Width="187" Click="Button_Click_2" HorizontalAlignment="Center"/>
+        <Button Name="LogOut" BorderThickness="5" BorderBrush="White" CornerRadius="10"  FontSize="30" Content="Log Out" Height="121" Width="237" Click="LogOut_Click" HorizontalAlignment="Center"/>
+        <Button Content="User Page" BorderThickness="5" FontSize="20" BorderBrush="White" CornerRadius="10" Margin="304,167,0,0" VerticalAlignment="Top" Height="105" Width="187" Click="Button_Click_3"/>
+        <Button Content="Customer Page" BorderThickness="5" FontSize="20" BorderBrush="White" CornerRadius="10" Margin="0,498,0,0" VerticalAlignment="Top" Height="104" Width="187" Click="Button_Click_4" HorizontalAlignment="Center"/>
+        <Button Content="Item Update and create Page" FontSize="20" BorderThickness="5" BorderBrush="White" CornerRadius="10" Margin="865,0,0,0" Height="103" Width="303" Click="Button_Click_5"/>
+
+    </Grid>
+</Page>
